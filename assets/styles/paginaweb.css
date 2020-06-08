@@ -1,0 +1,351 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores*/
+
+/*selector de atiqueta  header - dection - article - 
+header {
+    background: aqua;
+}*/
+
+/*selector descendente  body header div nav ol li a */
+/*selector de clase .link*/
+/* selector de id #portafolio*/
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: "Montserra", sans-serif;
+    font-weight: normal;
+    background-color: #D9D9D9;
+    /*font-style: italic;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arial, sans-serif;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    /*text-transform: uppercase;
+    text-decoration: dashed;*/
+}
+
+h2 {
+    color: #cc0099;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero {
+    height: 300px;
+    background-color: #E6A1A1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-imagen {
+    background-position: 50px;
+}
+
+h1 strong {
+    color: navy;
+
+}
+
+.portfolio {
+    background: #DEDEDE;
+    padding: 20px;
+}
+
+.project {
+    /*border-top: 10px solid red ;
+    border-right: 10px solid red ;
+    border-left: 10px solid red ;
+    border-bottom: 10px solid red ;
+    border-color:blueviolet ;
+    border-width: 20px;
+    border-style: solid;*/
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /*border-top-left-radius: 20px;*/
+    padding: 20px;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-date,
+.project-url,
+.project-course {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.project-descripcion {
+    font-size: 20px;
+
+}
+
+.project strong {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.project-since {
+    width: 500px;
+    margin: 20px 20px;
+}
+
+.project-imageContainer {
+    width: 500px;
+}
+
+.project-two {
+    /*border-top: 10px solid red ;
+    border-right: 10px solid red ;
+    border-left: 10px solid red ;
+    border-bottom: 10px solid red ;
+    border-color:blueviolet ;
+    border-width: 20px;
+    border-style: solid;*/
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /*border-top-left-radius: 20px;*/
+    padding: 20px;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-two-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-two-date,
+.project-two-url,
+.project-two-course {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.project-descripcion {
+    font-size: 20px;
+
+}
+
+.project-two strong {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.project-two-since {
+    width: 500px;
+    margin: 20px 20px;
+}
+
+.project-two-imageContainer {
+    width: 500px;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header {
+    background-color: #A47373;
+    color: mintcream;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+figure {
+    margin: 0;
+}
+
+.footer {
+    color: white;
+    background-color: #591202;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.explicacion {
+    display: flex;
+}
+
+.explicacion-title {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: -0.2px;
+}
+
+.event {
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event img {
+    width: 510px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    color: #A47373;
+    background-color: #D9D9D9;
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-descripcion {
+    text-align: left;
+}
+
+.event-url {
+    color: #660066;
+    border: 2px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #A6411C;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-link {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-size: 100px 100px;
+}
+
+.social-link.twitter {
+    background-image: url(../estilos/assets/img/twitter.jpg);
+    background-repeat: no-repeat;
+}
+
+.social-link.facebook {
+    background-image: url(../estilos/assets/img/facebook.png);
+    background-repeat: no-repeat;
+}
+
+.social-link.instagram {
+    background-image: url(../estilos/assets/img/instagram.jpg);
+    background-repeat: no-repeat;
+}
+
+.form-email input {
+    border-color: #DEDEDE;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px 20px 5px 25px;
+    background-image: url(../estilos/assets/img/correo.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+
+.form-email h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    border: 2px solid transparent;
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
